@@ -10,7 +10,7 @@ import android.widget.Spinner
 class benecoForm : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_beneco_form)
         //var intent = intent
 
         val n = findViewById<Button>(R.id.benbut)

@@ -3,12 +3,8 @@ package com.example.payment
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextWatcher
 import android.view.View
 import android.widget.*
-import androidx.core.view.isGone
-import org.w3c.dom.Text
-import kotlin.math.exp
 import android.widget.ArrayAdapter as ArrayAdapter1
 
 class paymentForm : AppCompatActivity() {
@@ -31,11 +27,11 @@ class paymentForm : AppCompatActivity() {
         val tit1 = findViewById<TextView>(R.id.textView14)
         val tit2 = findViewById<TextView>(R.id.textView15)
 
-        val neym = findViewById<EditText>(R.id.benfn)
+        val neym = findViewById<EditText>(R.id.fn)
         val neym1 = findViewById<EditText>(R.id.bawfn)
-        val add = findViewById<EditText>(R.id.benadd)
+        val add = findViewById<EditText>(R.id.addr)
         val add1 = findViewById<EditText>(R.id.bawadd)
-        val acc = findViewById<EditText>(R.id.benacc)
+        val acc = findViewById<EditText>(R.id.accnum)
         val acc1 = findViewById<EditText>(R.id.bawacc)
         val pym = findViewById<Spinner>(R.id.spinner2)
 
@@ -46,10 +42,17 @@ class paymentForm : AppCompatActivity() {
                 val selectedItem = parent?.getItemAtPosition(p2).toString()
                 if (selectedItem == "Gcash") {
                     expm.visibility = View.INVISIBLE
+                    tit1.visibility = View.INVISIBLE
+                    expy.visibility = View.INVISIBLE
+                    tit2.visibility = View.INVISIBLE
+
 
 
                 } else {
                     expm.visibility = View.VISIBLE
+                    tit1.visibility = View.VISIBLE
+                    expy.visibility = View.VISIBLE
+                    tit2.visibility = View.VISIBLE
                 }
 
 
@@ -61,15 +64,15 @@ class paymentForm : AppCompatActivity() {
         }
 
         final.setOnClickListener {
-            /* val benName = neym.text.toString()
-     val benAdd = add.text.toString()
-     val benAcc = acc.text.toString()
-     val benpym = pym.getSelectedItem().toString()
+            val benName = neym?.text.toString()
+     val benAdd = add?.text.toString()
+     val benAcc = acc?.text.toString()
+     val benpym = pym?.getSelectedItem().toString()
 
-     val bawName = neym1.text.toString()
-     val bawAdd = add1.text.toString()
-     val bawAcc = acc1.text.toString()
-     val bawpym = pym.getSelectedItem().toString()
+     val bawName = neym1?.text.toString()
+     val bawAdd = add1?.text.toString()
+     val bawAcc = acc1?.text.toString()
+     val bawpym = pym?.getSelectedItem().toString()
 
      val intent = Intent(this@paymentForm, finalLayout::class.java)
      intent.putExtra("Name:", benName)
@@ -82,7 +85,6 @@ class paymentForm : AppCompatActivity() {
      intent.putExtra("Payment: ", bawpym)
 
      startActivity(intent)
-      */
         }
     }
         }

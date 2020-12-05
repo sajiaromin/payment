@@ -42,8 +42,8 @@
         android:text="Full Name"
         android:textColor="#100D0D"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/benfn"
-        app:layout_constraintStart_toStartOf="@+id/benfn"
+        app:layout_constraintBottom_toTopOf="@+id/fn"
+        app:layout_constraintStart_toStartOf="@+id/fn"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
@@ -55,9 +55,9 @@
         android:text="Complete Address"
         android:textColor="#1B1616"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/benadd"
-        app:layout_constraintStart_toStartOf="@+id/benfn"
-        app:layout_constraintTop_toBottomOf="@+id/benfn" />
+        app:layout_constraintBottom_toTopOf="@+id/addr"
+        app:layout_constraintStart_toStartOf="@+id/fn"
+        app:layout_constraintTop_toBottomOf="@+id/fn" />
 
     <TextView
         android:id="@+id/textView6"
@@ -68,12 +68,12 @@
         android:text="Account Number"
         android:textColor="#0C0B0B"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/benacc"
-        app:layout_constraintStart_toStartOf="@+id/benadd"
-        app:layout_constraintTop_toBottomOf="@+id/benadd" />
+        app:layout_constraintBottom_toTopOf="@+id/accnum"
+        app:layout_constraintStart_toStartOf="@+id/addr"
+        app:layout_constraintTop_toBottomOf="@+id/addr" />
 
     <EditText
-        android:id="@+id/benfn"
+        android:id="@+id/fn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="57dp"
@@ -88,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/benadd"
+        android:id="@+id/addr"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="57dp"
@@ -103,7 +103,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/benacc"
+        android:id="@+id/accnum"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="53dp"

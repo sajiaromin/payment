@@ -15,19 +15,19 @@ class MainActivity : AppCompatActivity() {
         val op1 = findViewById<TextView>(R.id.textView)
         val op2 = findViewById<TextView>(R.id.textView2)
 
-        val neym = findViewById<EditText>(R.id.benfn)
+        val namee = findViewById<EditText>(R.id.fn)
         val neym1 = findViewById<EditText>(R.id.bawfn)
-        val add = findViewById<EditText>(R.id.benadd)
+        val add = findViewById<EditText>(R.id.addr)
         val add1 = findViewById<EditText>(R.id.bawadd)
-        val acc = findViewById<EditText>(R.id.benacc)
+        val acc = findViewById<EditText>(R.id.accnum)
         val acc1 = findViewById<EditText>(R.id.bawacc)
         val pym = findViewById<Spinner>(R.id.spinner2)
 
         op1.setOnClickListener {
-            val benName = neym.text.toString()
-            val benAdd = add.text.toString()
-            val benAcc = acc.text.toString()
-            val benpym = pym.getSelectedItem().toString()
+            val benName = namee?.text.toString()
+            val benAdd = add?.text.toString()
+            val benAcc = acc?.text.toString()
+            val benpym = pym?.getSelectedItem().toString()
 
             val intent= Intent(this, benecoForm::class.java)
             intent.putExtra("Name:", benName)
@@ -38,10 +38,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         op2.setOnClickListener {
-            val bawName = neym1.text.toString()
-            val bawAdd = add1.text.toString()
-            val bawAcc = acc1.text.toString()
-            val bawpym = pym.getSelectedItem().toString()
+            val bawName = neym1?.text.toString()
+            val bawAdd = add1?.text.toString()
+            val bawAcc = acc1?.text.toString()
+            val bawpym = pym?.getSelectedItem().toString()
             val intent = Intent(this, bawadiForm::class.java)
             intent.putExtra("Name:", bawName)
             intent.putExtra("Address: ", bawAdd)

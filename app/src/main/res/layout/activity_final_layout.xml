@@ -8,52 +8,30 @@
 
     <TextView
         android:id="@+id/endTitle"
-        android:layout_width="132dp"
-        android:layout_height="28dp"
+        android:layout_width="140dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="33dp"
         android:text="THANK YOU!"
         android:textColor="#0C0C0C"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="72dp" />
-
-    <TextView
-        android:id="@+id/finalPym"
-        android:layout_width="122dp"
-        android:layout_height="40dp"
-        android:text="Payment: "
-        android:textColor="#0C0C0C"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="350dp" />
+        app:layout_constraintBottom_toTopOf="@+id/finalName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/finalName"
-        android:layout_width="72dp"
-        android:layout_height="35dp"
-        android:text="Name: "
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="43dp"
         android:textColor="#0C0C0C"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="179dp" />
-
-    <TextView
-        android:id="@+id/finalAdd"
-        android:layout_width="72dp"
-        android:layout_height="35dp"
-        android:text="Address:"
-        android:textColor="#0C0C0C"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="235dp" />
-
-    <TextView
-        android:id="@+id/finalAcc"
-        android:layout_width="191dp"
-        android:layout_height="48dp"
-        android:text="Account Number: "
-        android:textColor="#0C0C0C"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="284dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endTitle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
